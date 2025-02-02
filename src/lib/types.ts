@@ -1,5 +1,5 @@
 export type JobItem = {
-  id: string;
+  id: number;
   badgeLetters: string;
   title: string;
   company: string;
@@ -18,3 +18,7 @@ export type JobItemExpanded = JobItem & {
   coverImgURL: string;
   companyUrl: string;
 };
+
+export type PageDirection = "next" | "prev";
+
+export type SortBy = "relevant" | "recent";
